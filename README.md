@@ -11,6 +11,6 @@ docker-compose up
 
 ### Access
 
-* API: http://<docker-machine-ip>:5000/flask-prometheus-grafana-example/
-* Prometheus: http://<docker-machine-ip>:9090/
-* Grafana: http://<docker-machine-ip>:3000 `[username: admin, password: pass@123]`
+* API: http:// < docker-machine-ip > :5000/flask-prometheus-grafana-example/
+* Prometheus: http:// < docker-machine-ip > :9090/
+* Grafana: http:// < docker-machine-ip > :3000 `[username: admin, password: pass@123]`
