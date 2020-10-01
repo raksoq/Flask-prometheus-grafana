@@ -2,11 +2,6 @@
 
 Example deployment of a Flask API using Prometheus and Grafana for metrics and monitoring. All tied together using docker-compose.
 
-### Install dependencies
-
-```
-pip install -r api/requirements.txt
-```
 
 ### Set up and run everything using docker-compose
 
@@ -16,6 +11,6 @@ docker-compose up
 
 ### Access
 
-* API: http://localhost:5000/flask-prometheus-grafana-example/
-* Prometheus: http://localhost:9090/
-* Grafana: http://localhost:3000 `[username: admin, password: pass@123]`
+* API: http://<docker-machine-ip>:5000/flask-prometheus-grafana-example/
+* Prometheus: http://<docker-machine-ip>:9090/
+* Grafana: http://<docker-machine-ip>:3000 `[username: admin, password: pass@123]`
