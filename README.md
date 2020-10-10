@@ -18,6 +18,7 @@ docker-compose up
 
 ```
 $ minikube start
+$ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 $ helm install prom prometheus-community/kube-prometheus-stack
 $ kubectl expose deployment prom-grafana --type=LoadBalancer --name mygraph --port=80 --target-port=3000 --protocol=TCP
 $ minikube service mygraph --url
