@@ -4,15 +4,16 @@
 ### Docker compose setup:
 
 ```
-start docker machine (Quickstart terminal)
+git clone https://github.com/Dgotlieb/Flask-prometheus-grafana.git
+start docker machine (Desktop / Quickstart terminal)
 docker-compose up
 ```
 
 ### Access
 
 * API: http:// < docker-machine-ip > :5000/flask-prometheus-grafana-example/
-* Prometheus: http:// < docker-machine-ip > :9090/
-* Grafana: http:// < docker-machine-ip > :3000 `[username: admin, password: pass@123]`
+* Prometheus: http:// < docker-machine-ip / localhost > :9090/
+* Grafana: http:// < docker-machine-ip / localhost > :3000 `[username: admin, password: pass@123]`
 
 ### K8S setup:
 
