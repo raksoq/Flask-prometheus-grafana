@@ -1,4 +1,4 @@
-## Example on how to use Prometheus and Grafana to monitor a Flask API application and K8S cluster metrics
+## Example on how to use Prometheus and Grafana to monitor a Flask API
 
 
 ### Docker compose setup:
@@ -16,5 +16,6 @@ $ docker-compose up
 * API URL1: http://127.0.0.1:5000/say-hello
 * API URL2: http://127.0.0.1:5000/error
 * Prometheus: http://127.0.0.1:9090/
-* Grafana: http://127.0.0.1:3000 
+* Grafana: http://127.0.0.1:3000   
+
 `[username: admin, password: pass@123]`
