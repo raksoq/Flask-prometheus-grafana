@@ -9,7 +9,7 @@ logging.info("Setting LOGLEVEL to INFO")
 api = Flask(__name__)
 metrics = PrometheusMetrics(api)
 
-metrics.info("app_info", "description", version="1.0.0")
+metrics.info("app_info", "description", version="1.0.0", app_name='my_flask_app')
 
 
 @api.route("/")
