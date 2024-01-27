@@ -34,3 +34,15 @@ services:
       - ./monitoring/grafana_dashboard.json:/etc/grafana/provisioning/dashboards/grafana_dashboard.json
     env_file:
       - ./monitoring/config.monitoring
+      
+  cadvisor:
+    image: gcr.io/google-containers/cadvisor:latest 
+    ports:
+      - 8090:8080
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    restart: always    
