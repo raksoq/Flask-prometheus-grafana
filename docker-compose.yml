@@ -2,18 +2,16 @@ version: "3.5"
 
 services:
   flask-api:
-    build:
-      context: ./api
+    image: oskarq/flask-prom
     restart: unless-stopped
     container_name: flask-api
-    image: example-flask-api
     ports:
       - "5000:5000"
 
-  example-prometheus:
-    image: prom/prometheus:latest
+  prometheus:
+    image: prom/prometheus
     restart: unless-stopped
-    container_name: example-prometheus
+    container_name: prometheus
     ports:
       - 9090:9090
     volumes:
@@ -21,13 +19,13 @@ services:
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
 
-  example-grafana:
-    image: grafana/grafana:8.2.5
+  grafana:
+    image: grafana/grafana
     restart: unless-stopped
     user: "472"
-    container_name: example-grafana
+    container_name: grafana
     depends_on:
-      - example-prometheus
+      - prometheus
     ports:
       - 3000:3000
     volumes:

@@ -12,7 +12,7 @@ metrics = PrometheusMetrics(api)
 metrics.info("app_info", "description", version="1.0.0")
 
 
-@api.route("/say-hello/")
+@api.route("/")
 def hello():
     return {"message": "hello"}
 

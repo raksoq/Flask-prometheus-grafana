@@ -13,7 +13,7 @@ $ docker-compose up
 
 ### Access
 
-* API URL1: http://127.0.0.1:5000/say-hello
+* API URL1: http://127.0.0.1:5000/
 * API URL2: http://127.0.0.1:5000/error
 * Prometheus: http://127.0.0.1:9090/
 * Grafana: http://127.0.0.1:3000   
